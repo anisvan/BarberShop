@@ -1,0 +1,23 @@
+<h2>Обратная связь</h2>
+<p>На этой странице вы можете оставить нам сообщение</p>
+
+<form action="/feedback" method="POST"  class="form">
+  <div class="form-group">
+
+  <textarea class="form-control" rows="3" name="massage_user" placeholder="Введите ваше сообщение" value="<%=@massage_user%>"></textarea>
+  </div>
+  <div class="form-group">
+
+    <label for="exampleInputName2">Ваше имя</label>
+    <input type="text" class="form-inline" placeholder="Введите ваше имя" name="username" value="<%=@user_name%>">
+    <label for="exampleInputEmail2">Ваш Email</label>
+    <input type="email" class="form-inline" placeholder="Email" name="email" value="<%=@ema%>">
+  </div>
+ 
+  <button type="submit" class="btn btn-default">Отправить</button>
+
+
+
+</form>
+
+
